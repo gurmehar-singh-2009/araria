@@ -1,0 +1,46 @@
+[workspace]
+members  = ["client", "shared"]
+resolver = "3"
+
+[profile.release]
+opt-level       = 3
+lto             = "thin"
+codegen-units   = 1
+debug           = false
+overflow-checks = false
+incremental     = false
+panic           = "abort"
+strip           = "debuginfo"
+
+[workspace.lints.rust]
+missing_docs           = "warn"
+unsafe_op_in_unsafe_fn = "deny"
+
+[workspace.lints.clippy]
+all      = { level = "deny", priority = -1 }
+pedantic = { level = "deny", priority = -1 }
+nursery  = { level = "deny", priority = -1 }
+cargo    = { level = "deny", priority = -1 }
+
+missing_docs_in_private_items   = "warn"
+missing_errors_doc              = "deny" # pub fn -> Result needs a "# Errors" section
+missing_panics_doc              = "deny" # anything that can panic needs a "# Panics" section
+missing_safety_doc              = "deny" # unsafe pub fn needs a "# Safety" section
+undocumented_unsafe_blocks      = "deny" # every `unsafe { }` needs a `// SAFETY:` comment above it
+allow_attributes_without_reason = "deny" # every #[allow(...)] needs reason = "..."
+missing_assert_message          = "deny" # assert!()/debug_assert!() need a real message
+
+unwrap_used      = "deny" # .unwrap() -> handle it or propagate with ?
+expect_used      = "warn" # .expect("msg") already forces a reason string
+unwrap_in_result = "deny" # fn returns Option/Result? use ? instead of unwrapping internally
+panic            = "deny" # no panic!() outside tests
+unreachable      = "deny" # no unreachable!() outside tests
+todo             = "deny"
+unimplemented    = "deny"
+dbg_macro        = "deny"
+print_stdout     = "warn"
+print_stderr     = "warn"
+exit             = "deny"
+
+module_name_repetitions = "allow"
+multiple_crate_versions = "allow"

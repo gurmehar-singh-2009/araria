@@ -1,0 +1,9 @@
+msrv = "1.75.0" # TODO: determine this? placeholder
+cognitive-complexity-threshold = 20
+too-many-arguments-threshold = 6
+too-many-lines-threshold = 100
+type-complexity-threshold = 250
+disallowed-methods = [
+  { path = "std::mem::forget", reason = "no buddy, use drop" },
+  # lazy to add rest it doesnt matter though
+]
