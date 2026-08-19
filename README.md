@@ -1,10 +1,11 @@
 <div align="center">
+
 # Araria
 
 > A modern, high performant, and open source Roblox alternative!
 
 [![Rust](https://img.shields.io/badge/Language-Rust-orange.svg?style=flat-square&logo=rust)](https://www.rust-lang.org)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/badge/License-WTFPL-blue.svg?style=flat-square)](LICENSE)
 
 </div>
 
