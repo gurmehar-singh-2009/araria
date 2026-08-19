@@ -1,9 +1,16 @@
+<div align="center">
 # Araria
 
-> A modern, optimized, and fully open source Roblox alternative!
+> A modern, high performant, and open source Roblox alternative!
 
-[![Rust](https://shields.io)](https://rust-lang.org)
-[![License](https://shields.io)](#-license)
+[![Rust](https://img.shields.io/badge/Language-Rust-orange.svg?style=flat-square&logo=rust)](https://www.rust-lang.org)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+
+</div>
+
+---
+> [!NOTE]
+> **Araria is currently in Alpha development.** Core engine systems are actively being developed, and the project in it's current form is not suitable for gameplay.
 
 ## Features
 
@@ -11,7 +18,8 @@
 ## Project Roadmap
 | Importance | System | Feature | Status |
 | :---: | :-- | :-- | :--- |
-| URGENT | UI | Client UI | In progress |
+| High | UI | Client UI | In progress |
+| Medium | Scripting | Embedded Engine | Planned |
 
 
 > [!TIP]
@@ -19,3 +27,7 @@
 
 > [!WARNING]
 > test test 123123
+
+## Live demo
+
+## Quickstart
