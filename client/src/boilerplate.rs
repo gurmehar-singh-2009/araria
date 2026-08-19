@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: WTFPL
+//! SPDX-License-Identifier: WTFPL
 use bevy::{
     input::mouse::{MouseMotion, MouseWheel},
     prelude::*,

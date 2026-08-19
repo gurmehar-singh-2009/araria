@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: WTFPL
+//! SPDX-License-Identifier: WTFPL
 fn main() {
     println!("Hello, world");
 }

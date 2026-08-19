@@ -1,6 +1,6 @@
 #!/bin/sh
 
-HEADER='// SPDX-License-Identifier: WTFPL'
+HEADER='//! SPDX-License-Identifier: WTFPL'
 
 case "$1" in
     clean)

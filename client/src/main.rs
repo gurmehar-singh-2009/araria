@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: WTFPL
+//! SPDX-License-Identifier: WTFPL
 use bevy::{prelude::*, window::SystemCursorIcon};
 use bevy_lunex::prelude::*;
 
