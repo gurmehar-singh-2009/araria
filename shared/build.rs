@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: WTFPL
 //! shared binary build script.
 //!
 //! right now this creates the certificate shit for webtransport.

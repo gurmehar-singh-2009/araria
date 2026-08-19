@@ -1,0 +1,4 @@
+[filter "wtfpl"]
+    clean = ./scripts/license-filter.sh clean
+    smudge = ./scripts/license-filter.sh smudge
+    required = true
