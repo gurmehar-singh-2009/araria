@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-bevy = { version = "0.18", features = ["dynamic_linking"] }
-bevy_lunex = "0.6.0"
+bevy       = { version = "0.19.1", features = ["dynamic_linking"] }
+bevy_lunex = "0.7.0"
 # log = { version = "*", features = ["max_level_debug", "release_max_level_warn"] }
 
 [profile.dev]
@@ -15,6 +15,7 @@ opt-level = 1
 opt-level = 3
 
 [profile.release]
+panic = "unwind"
 # codegen-units = 1
 # lto = "thin"
 
@@ -22,3 +23,4 @@ opt-level = 3
 inherits  = "release"
 opt-level = "s"
 strip     = "debuginfo"
+panic     = "unwind"
